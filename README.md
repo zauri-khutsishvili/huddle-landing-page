@@ -4,7 +4,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 ## Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/four-card-feature-section-pExwbOLdkA](https://www.frontendmentor.io/solutions/four-card-feature-section-pExwbOLdkA)
+- Solution URL: [https://www.frontendmentor.io/solutions/huddle-landing-page-S1Z0xDuP-K](https://www.frontendmentor.io/solutions/huddle-landing-page-S1Z0xDuP-K)
 - Live Site URL: [https://zauri-khutsishvili.github.io/huddle-landing-page/](https://zauri-khutsishvili.github.io/huddle-landing-page/)
 
 ## Built with
