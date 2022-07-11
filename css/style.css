@@ -22,29 +22,32 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
-    gap: 5.32rem;
-    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .intro-section__logo {
     width: 21.5rem;
-    position: absolute;
     margin-left: -0.3rem;
-    top: 6.68%;
+    margin-top: 1.01%;
+}
+
+.intro-section__middle-section {
+    align-self: center;
+    display: flex;
+    gap: 5.32rem;
+    margin-top: 6.66%;
 }
 
 .intro-section__illustration {
     align-self: flex-start;
-    width: 54.75%;
-    height: auto;
-    margin-top: 15.264rem;
+    max-width: 54.75%;
     object-fit: contain;
 }
 
 .intro-section__header {
-    margin-right: 1.28rem;
-    max-width: 52rem;
-    margin-top: 19.584rem;
+    align-self: flex-start;
+    margin-top: 3.3%;
 }
 
 .intro-section__title {
@@ -55,6 +58,7 @@ html {
 }
 
 .intro-section__description {
+    max-width: 97%;
     margin: 2rem 0 2.4rem;
     font-size: 1.8rem;
     color: white;
@@ -76,7 +80,7 @@ html {
     font-size: 1.8rem;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    transition: color .1s;
+    transition: background-color .25s;
 }
 
 .intro-section__register:hover {
@@ -85,12 +89,13 @@ html {
 }
 
 .intro-section__links {
-    position: absolute;
-    bottom: 5%;
-    right: 5.57%;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 1.6rem;
+    margin-top: 1.65%;
+    margin-right: .6%;
+    position: relative;
 }
 
 .intro-section__links i {
@@ -112,8 +117,8 @@ html {
 .intro-section__links .fa-facebook-f {
     font-size: 1.8rem;
     line-height: 2.2em;
-    width: 2.2em;
-    height: 2.2em;
+    width: 2.2225em;
+    height: 2.2225em;
 }
 
 .intro-section__links .fa-twitter {
@@ -126,8 +131,28 @@ html {
 .intro-section__links .fa-instagram {
     font-size: 2.05rem;
     line-height: 1.95em;
-    width: 1.95em;
-    height: 1.95em;
+    width: 1.9515em;
+    height: 1.9515em;
+}
+
+.attribution {
+    position: absolute;
+    right: 0;
+    top: 4.8rem;
+    font-size: .85rem;
+    font-family: 'Poppins', sans-serif;
+    color: lightgray;
+    text-align: right;
+}
+
+.attribution a {
+    color: white;
+    transition: .1s;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: var(--soft-magenta);
 }
 
 @media (max-width: 1335px) {
@@ -136,30 +161,38 @@ html {
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1199px) {
+    .intro-section__header {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 842px) {
     .intro-section {
+        min-height: none;
         background-image: url(../images/bg-mobile.svg);
         background-size: contain;
         flex-direction: column;
-        padding: 3.5rem 3.5rem 4rem;
         justify-content: flex-start;
+        padding: 2.9rem 9.336% 4rem;
         align-items: center;
-        gap: 6.03rem;
     }
 
     .intro-section__logo {
-        width: 100%;
+        align-self: flex-start;
         max-width: 12.9rem;
-        position: absolute;
-        margin-left: -0.3rem;
-        top: 3.2rem;
-        left: 3.7rem;
+        margin-left: -0.1rem;
+    }
+
+    .intro-section__middle-section {
+        margin-top: 5.9rem;
+        flex-direction: column;
+        gap: 6rem;
     }
 
     .intro-section__illustration {
         width: 99.018%;
         max-width: 50rem;
-        margin-top: 8.85rem;
         align-self: center;
     }
 
@@ -175,6 +208,7 @@ html {
     }
 
     .intro-section__description {
+        max-width: 100%;
         margin-top: 1.3rem;
         font-size: 1.6rem;
     }
@@ -187,30 +221,38 @@ html {
     }
 
     .intro-section__links {
-        position: relative;
-        right: auto;
-        bottom: -0.3rem;
+        width: 100%;
+        justify-content: center;
+        margin-top: 6.4rem;
+        margin-right: 0;
         gap: 1rem;
     }
 
     .intro-section__links .fa-facebook-f {
         font-size: 1.3rem;
         line-height: 2.2em;
-        width: 2.2em;
-        height: 2.2em;
+        width: 2.155em;
+        height: 2.155em;
     }
     
     .intro-section__links .fa-twitter {
         font-size: 1.2rem;
         line-height: 2.3em;
-        width: 2.3em;
-        height: 2.3em;
+        width: 2.334em;
+        height: 2.334em;
     }
     
     .intro-section__links .fa-instagram {
         font-size: 1.5rem;
         line-height: 1.9em;
-        width: 1.9em;
-        height: 1.9em;
+        width: 1.867em;
+        height: 1.867em;
+    }
+
+    .attribution {
+        text-align: center;
+        top: 3.5rem;
+        right: auto;
+        font-size: .75rem;
     }
 }
